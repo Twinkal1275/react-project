@@ -1,0 +1,798 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*
+{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+    font-family :'Times New Roman', Times, serif;
+}
+
+/* navbar */
+.logo
+{
+  font-size: 40px;
+  color: rgb(129, 196, 8);
+  font-weight :900;
+}
+.logo:hover
+{
+  color: rgb(129, 196, 8);
+}
+.nav
+{
+  width: 100%;
+  display: block !important;
+  margin-top: 10px !important;
+  margin-left: 110px;
+}
+.nav li
+{
+  padding: 0px 11px;
+  display: inline-block;
+}
+.nav a
+{
+  color: rgb(115, 115, 115);
+  font-size: 20px;
+}
+.search
+{
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid rgb(255, 218, 145);
+  font-size: 40px;
+  color: rgb(129, 196, 8);
+}
+.search:hover
+{
+  background-color: rgb(255, 218, 145);
+}
+.shp li
+{
+  display: inline-block !important;
+}
+.icon
+{
+  color: rgb(129, 196, 8);
+}
+
+
+/* home */
+
+/* slide */
+#slide
+{
+  width: 100%;
+  height: 430px;
+  background: url(images/bg1.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide
+{
+  width: 100%;
+  height: 430px;
+  background-color: rgb(251, 249, 244);
+  opacity: .9;
+}
+.food
+{
+  padding-left: 120px;
+  padding-top: 60px;
+}
+.food h4
+{
+  color: rgb(254, 193, 73);
+  font-weight: 900;
+  font-size: 30px;
+}
+.food h1
+{
+  color: rgb(129, 196, 8);
+  font-weight: bolder;
+  font-size: 60px;
+}
+.food .form-control
+{
+  border-radius: 50px;
+  padding: 25px 20px;
+  width: 30% !important;
+  border-top-right-radius: 50px !important;
+  border-bottom-right-radius: 50px !important;
+  border: 1px solid rgb(255, 181, 36);
+}
+.food button
+{
+  border-radius: 50px;
+  border-top-left-radius: 50px !important;
+  border-bottom-left-radius: 50px !important;
+  margin-left: -160px  !important;
+  background-color: rgb(129, 196, 8);
+  border: 3px solid rgb(255, 181, 36);
+  color: white;
+  font-weight: 900;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+.food button:hover
+{
+  background-color: rgb(255, 181, 36);
+  color: white;
+}
+
+
+.carousel
+{
+  width: 60%;
+  height: 300px;
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-left: 90px;
+}
+.carousel img
+{
+  width: 100%;
+  height: 300px;
+}
+.carousel-control-prev,.carousel-control-next
+{
+  background-color: rgb(129, 196, 8);
+  border-radius: 50%;
+  font-size: 0px !important;
+  overflow-y: hidden;
+  height: 50px;
+  margin-top:32% !important;
+  width: 50px;
+  text-align: center !important;
+}
+.carousel-control-prev:hover,.carousel-control-next:hover
+{
+  border: 1px solid white;
+}
+
+
+/* product */
+.product-nav h1
+{
+  margin-top: 50px;
+  padding-left: 30px;
+}
+.product-nav ul
+{
+  margin-left: 100px;
+}
+.product-nav li
+{
+  padding: 10px 10px;
+  display: inline-block !important;
+  margin-top: 50px;
+}
+.product-nav a
+{
+  background-color: rgb(244, 246, 248);
+  padding: 10px 30px;
+  color: black;
+  border-radius: 70px !important;
+  overflow-y: hidden !important;
+}
+.product-nav a:hover
+{
+  background-color: rgb(255, 181, 36);
+  color: white;
+}
+.image
+{
+  background: url(images/grapes.jpg) no-repeat;
+  background-size: cover !important;
+  background-position: 0% 0% !important;
+  width: 130% !important;
+  height: 200px;
+  padding: 0% !important;
+  margin-left: -20px !important;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.image:hover,.image1:hover,.image2:hover,.image3:hover,.image4:hover
+{
+  transform: scale(1.1);
+  height: 200px !important;
+}
+.box
+{
+  border: 1px solid rgb(255, 181, 36);
+  border-radius: 20px;
+  width: 22%;
+  margin-left: 30px;
+}
+.box:hover,.boxes:hover
+{
+  box-shadow: 0px 5px 10px rgb(170, 172, 157);
+}
+.box p,.boxes p
+{
+  color: rgb(170, 172, 157);
+  font-size: 20px;
+}
+.image p,.image1 p,.image2 p,.image3 p,.image4 p
+{
+  background-color: rgb(255, 181, 36);
+  padding: 2px 5px;
+  width: 90px;
+  margin-left: 30px;
+  margin-top: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+.box button,.boxes button
+{
+  padding: 5px 20px;
+  color: rgb(129, 196, 8);
+  background-color: white;
+  border-radius: 50px;
+  border: 1px solid rgb(255, 181, 36);
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.box button:hover,.boxes button:hover
+{
+  background-color: rgb(255, 181, 36);
+  color: white;
+}
+.image1
+{
+  background: url(images/rasp.jpg) no-repeat;
+  background-size: cover !important;
+  background-position: 0% 0% !important;
+  width: 130% !important;
+  height: 200px;
+  padding: 0% !important;
+  margin-left: -20px !important;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.image2
+{
+  background: url(images/apricots.jpg) no-repeat;
+  background-size: cover !important;
+  background-position: 0% 0% !important;
+  width: 130% !important;
+  height: 200px;
+  padding: 0% !important;
+  margin-left: -20px !important;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.image3
+{
+  background: url(images/banana.jpg) no-repeat;
+  background-size: cover !important;
+  background-position: 0% 0% !important;
+  width: 130% !important;
+  height: 200px;
+  padding: 0% !important;
+  margin-left: -20px !important;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.image4
+{
+  background: url(images/orange.jpg) no-repeat;
+  background-size: cover !important;
+  background-position: 0% 0% !important;
+  width: 130% !important;
+  height: 200px;
+  padding: 0% !important;
+  margin-left: -20px !important;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+h1
+{
+  font-size: 40px;
+}
+
+/* fresh */
+#fresh
+{
+  background-color: rgb(255, 181, 36);
+  height: 550px;
+}
+#fresh h1
+{
+  color: white;
+  font-weight: 900;
+  padding-left: 20%;
+  font-size: 60px;
+}
+#fresh p
+{
+  padding-left: 20%;
+  font-size: 18px;
+}
+#fresh button
+{
+  padding: 10px 60px;
+  margin-left: 20%;
+  margin-top: 2%;
+  border-radius: 50px;
+  border: 1px solid white;
+}
+#fresh button:hover
+{
+  background-color: rgb(129, 196, 8);
+}
+.appl
+{
+  height: 460px;
+  width: 500px;
+}
+
+
+/* seller */
+.rate
+{
+  background-color: rgb(244, 246, 248);
+  padding: 10px;
+  border-radius: 20px;
+  margin: 10px;
+  width: 31%;
+}
+#seller h1
+{
+  font-size: 60px;
+  font-weight: 900;
+}
+#seller p
+{
+  font-size: 20px;
+}
+.rate img
+{
+   width: 200px;
+   height: 150px;
+   border-radius: 50%;
+   margin-top: 30px;
+}
+.star
+{
+  display: flex;
+  flex-direction: row;
+  color: rgb(129, 196, 8);
+}
+.rate button
+{
+  display: flex;
+  flex-direction: row;
+  color: rgb(129, 196, 8);
+  border: 1px solid rgb(255, 181, 36);
+  padding: 5px 35px;
+  border-radius: 50px;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.rate button:hover
+{
+  background-color: rgb(255, 181, 36);
+  color: white;
+}
+
+
+/* footer */
+#footer
+{
+  width: 100%;
+  height: 500px;
+  background-color: rgb(69, 89, 91);
+  margin-top: 50px;
+}
+.form-control
+{
+  border-radius: 50px;
+  padding: 25px 20px !important;
+  width: 30% !important;
+  /* border-top-right-radius: 50px !important; */
+  /* border-bottom-right-radius: 50px !important; */
+  border: 1px solid rgb(255, 181, 36);
+  border-right: none !important;
+}
+#button-addon2
+{
+  /* border-radius: 50px; */
+  border-top-right-radius: 50px !important;
+  border-bottom-right-radius: 50px !important;
+  margin-left: -00px  !important;
+  background-color: rgb(129, 196, 8);
+  border: 3px solid rgb(255, 181, 36);
+  color: white;
+  font-weight: 900;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+#button-addon2:hover
+{
+  background-color: rgb(255, 181, 36);
+}
+.social
+{
+  display: flex;
+  flex-direction: row;
+}
+.s-1
+{
+  font-size: 20px;
+  margin: 15px;
+  padding: 10px;
+  font-size: 40px;
+  border-radius: 50px;
+  margin-top: 20px;
+  border: 1px solid rgb(255, 181, 36);
+}
+.s-1:hover
+{
+  background-color: rgb(255, 181, 36);
+  color: black;
+}
+.read
+{
+  border: 1px solid rgb(255, 181, 36);
+  border-radius: 50px;
+  margin-top: 20px;
+  padding: 10px 25px;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 18px;
+}
+.read:hover
+{
+  background-color: rgb(255, 181, 36);
+  color: white;
+}
+
+/* shop jsx */
+#shop
+{
+  width: 100%;
+  height: 190px;
+  background: url(images/cart-apple.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.appp
+{
+  display: flex;
+  font-size: 20px;
+  color: rgb(129, 196, 8);
+  margin-top: 10px;
+}
+
+input[type="range"] {
+  appearance: auto;
+  cursor: default;
+  background-color: rgb(129, 196, 8) !important;
+  padding: initial;
+  border: initial;
+}
+.rang
+{
+  background-color: rgb(129, 196, 8);
+}
+.mor-btn
+{
+  padding: 15px 10px;
+  border-radius: 50px;
+  border: 1px solid rgb(255, 181, 36);
+  text-transform: capitalize;
+  font-size: 20px;
+}
+.mor-btn:hover
+{
+  background-color: rgb(255, 181, 36);
+  color: white;
+}
+.banner
+{
+  width: 100%;
+  height: 300px;
+  background: url(images/banner-fruits.jpg) no-repeat;
+  background-size: cover;
+  margin-top: 10%;
+  border-radius: 20px;
+}
+.boxes
+{
+  border: 1px solid rgb(255, 181, 36);
+  border-radius: 20px;
+  margin-left: 20px;
+  width: 30%;
+}
+.bag
+{
+  padding: 10px 30px;
+  border: 1px solid rgb(255, 181, 36);
+  border-radius: 50px;
+  color: rgb(129, 196, 8);
+  font-size: 20px;
+}
+.bag:hover
+{
+  background-color: rgb(255, 181, 36);
+  color: white;
+}
+.tab-1
+{
+   background-color: rgb(247, 247, 247) !important; 
+}
+.table .col-md-4
+{
+  padding: 0 !important;
+  font-size: 19px;
+  margin-top: 20px;
+  color: rgb(115, 115, 115) !important;
+}
+.reply input
+{
+  width: 46%;
+  margin: 2%;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+.reply textarea
+{
+  margin: 2%;
+  height: 200px;
+  width: 96%;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+.reply input:hover,.reply textarea:hover
+{
+  border-radius: 10px;
+  border: 3px solid rgb(202, 184, 184);
+}
+.post
+{
+  padding: 10px 20px;
+  border: 2px solid rgb(255, 181, 36);
+  color: rgb(129, 196, 8);
+  font-size: 20px;
+  border-radius: 50px; 
+}
+.post:hover
+{
+  background-color: rgb(255, 181, 36);
+  color: white;
+}
+.contact
+{
+  background-color: rgb(247, 247, 247);
+  border-radius: 20px;
+  padding: 5%;
+}
+.submit
+{
+  font-size: 20px;
+  border: 2px solid rgb(255, 181, 36);
+}
+.submit:hover
+{
+  background-color: rgb(255, 181, 36);
+  color: white;
+}
+.form
+{
+  overflow-y: hidden;
+  height: 480px;
+}
+.form input:hover,textarea:hover
+{
+  border: 2px solid rgb(202, 184, 184);
+}
+.address,.mail,.phone
+{
+  background-color: white;
+  margin-top: 13%;
+  padding: 5%;
+}
+.error
+{
+  margin-left: 45%;
+  margin-top: 10%;
+}
+.page h1,.page h2
+{
+   overflow-y: hidden;
+}
+.user
+{
+  width: 75%;
+}
+.modal
+{
+  background-color: white;
+  opacity: .8 !important;
+  width: 100% !important;
+}
+
+
+@media only screen and (min-width:320px) and (max-width:480px)
+{
+  #slide
+  {
+    overflow-y: hidden !important;
+    height: 500px !important;
+  }
+  .slide
+  {
+    overflow-y: hidden !important;
+    height: 500px !important;
+  }
+  .food
+  {
+    width: 100%;
+    margin: -15% !important;
+  }
+  .food h1
+  {
+    font-size: 30px;
+  }
+  .user
+  {
+    width: 105% !important;
+    margin: 0 !important;
+  }
+  .user button
+  {
+    font-size: 10px !important;
+  }
+  #carouselExampleIndicators
+  {
+    width: 90%;
+    height: 200px !important;
+    margin-left: 5%;
+    margin-top: 22% !important;
+    overflow-y: hidden !important;
+  }
+ .carousel-control-prev-icon ,.carousel-control-next-icon
+ {
+   overflow-y: hidden !important;
+ }
+ .big-app img
+ {
+  width: 50% !important;
+  height: 160px !important;
+ }
+ .fresh-shop
+ {
+  text-align: center !important;
+ }
+ .fresh-shop img
+ {
+  margin-left: 30% !important;
+ }
+ .appp
+ {
+  margin-left: 33% !important;
+ }
+ .product-nav li
+ {
+  display: inline-block !important;
+  margin-left: -5% !important;
+  margin-top: 10px !important;
+ }
+ .product-nav h1
+ {
+  text-align: center !important;
+ }
+ .box
+ {
+  width: 80%;
+  margin-left: 10% !important;
+  margin-top: 5% !important;
+ }
+ .rate img
+ {
+  width: 100px !important;
+  height: 100px !important;
+  margin-left: 27% !important;
+ }
+ .rate h3,.rate p,.rate h2
+ {
+  margin-left: 30% !important;
+ }
+ .rate button
+ {
+  margin-left: 12%;
+ }
+ #fresh
+ {
+  overflow-y: hidden !important;
+  height: 710px !important;
+  width: 100%;
+ }
+ .exotic
+ {
+  width: 100% !important;
+  margin-left: -10% !important;
+ }
+ #seller
+ {
+  width: 90%;
+  margin-left: 5%;
+ }
+ .rate
+ {
+  width: 80%;
+  margin-left: 10% !important;
+ }
+ #footer
+ {
+  width: 100%;
+  height: 1350px !important;
+ }
+ .boxes
+ {
+  width: 80% !important;
+  height: auto;
+  margin-top: 20px !important;
+  margin-left: 10% !important;
+ }
+ .boxes button
+ {
+  margin-left: 25% !important;
+ }
+ .brocoli
+ {
+  width: 90%;
+  margin-left: 5% !important;
+ }
+ .page
+ {
+  width: 90%;
+  margin-left: 5% !important;
+ }
+ .error
+ {
+  margin-left: 29% !important;
+ }
+ .forms
+ {
+  width: 90%;
+  margin-left: 5% !important;
+ }
+ .maps
+ {
+  width: 90% !important;
+  height: 300px !important;
+  margin-left: 5% !important;
+ }
+ .nav li
+ {
+  display: block !important;
+  width: 40%;
+  margin-left: 25% !important;
+  text-align: end !important;
+ }
+ .nav a
+ {
+  text-align: end !important;
+ }
+ .search,.icon
+ {
+  display: none !important;
+ }
+ .footer
+ {
+  width: 90%;
+  margin-left: 5% !important;
+ }
+}
